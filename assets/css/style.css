@@ -53,17 +53,12 @@ article {
     border:1px solid gray;
     border-radius: 10px;
     margin:auto;
-   
-    
  }
  .pilar1 {
     grid-area: pilar1;
-   
-    
 }
 .pilar2 {
     grid-area: pilar2;
-   
 }
 .pilar3 {
     grid-area: pilar3;
@@ -88,10 +83,6 @@ footer {
         "pilar3 pilar4"
         "footer footer";
     }
-    
-    footer {
-        text-align: center;
-    }     
 }  
 @media screen and (min-width:900px){
    
@@ -107,8 +98,4 @@ footer {
         "pilar1 pilar2 pilar3 pilar4"
         "footer footer footer footer";
     }
-    
-    footer {
-        text-align: center;
-    }     
 }  
