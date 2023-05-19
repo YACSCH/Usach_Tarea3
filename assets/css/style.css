@@ -6,14 +6,18 @@
 
 .contenedor{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, auto); ;
+    gap:10px;
     grid-template-areas: 
-    "header header header header"
-    "slider slider slider slider"
-    "titulos titulos titulos titulos"
-    "pilar1 pilar2 pilar3 pilar4"
-    "footer footer footer footer";
-   
+    "header"
+    "slider"
+    "titulos"
+    "pilar1"
+    "pilar2"
+    "pilar3"
+    "pilar4"
+    "footer";   
 }
 header {
     grid-area: header;
@@ -36,22 +40,30 @@ a{
     padding: 10px;
     text-decoration: none;
 }
+.slider{
+    grid-area: slider;
+}
 .titulos {
     grid-area:titulos;
     text-align: center;
+    width:auto;
 }
 article {
-    width: 250px;
+    width: 200px;
     border:1px solid gray;
     border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-}
+    margin:auto;
+   
+    
+ }
  .pilar1 {
     grid-area: pilar1;
+   
+    
 }
 .pilar2 {
     grid-area: pilar2;
+   
 }
 .pilar3 {
     grid-area: pilar3;
@@ -61,12 +73,42 @@ article {
 }
 footer {
     grid-area: footer;
-    text-align: center;
+    text-align: left;
 }
- @media screen and (max-widht:550){
-    
-    footer{
-        text-align: left;
+ @media screen and (min-width:550px){
+    .contenedor {
+        grid-template-columns: repeat(2,1fr) ;
+        grid-template-rows: repeat(6,auto);
+        gap:10px;
+        grid-template-areas: 
+        "header header"
+        "slider slider"
+        "titulos titulos"
+        "pilar1 pilar2" 
+        "pilar3 pilar4"
+        "footer footer";
     }
     
+    footer {
+        text-align: center;
+    }     
+}  
+@media screen and (min-width:900px){
+   
+
+    .contenedor {
+        grid-template-columns: repeat(4,1fr) ;
+        grid-template-rows: repeat(5,auto);
+        gap:10px;
+        grid-template-areas: 
+        "header header header header"
+        "slider slider slider slider"
+        "titulos titulos titulos titulos"
+        "pilar1 pilar2 pilar3 pilar4"
+        "footer footer footer footer";
+    }
+    
+    footer {
+        text-align: center;
+    }     
 }  
