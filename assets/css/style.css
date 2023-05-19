@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    "header header header header"
+    "slider slider slider slider"
+    "titulos titulos titulos titulos"
+    "pilar1 pilar2 pilar3 pilar4"
+    "footer footer footer footer";
+   
+}
+header {
+    grid-area: header;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+nav {
+    grid-area: nav;
+    display: flex;
+}
+nav a {
+    margin-right: 10px;
+}
+img {
+    border:0px;
+    padding: 0px;
+}
+a{
+    padding: 10px;
+    text-decoration: none;
+}
+.titulos {
+    grid-area:titulos;
+    text-align: center;
+}
+article {
+    width: 250px;
+    border:1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+ .pilar1 {
+    grid-area: pilar1;
+}
+.pilar2 {
+    grid-area: pilar2;
+}
+.pilar3 {
+    grid-area: pilar3;
+}
+.pilar4 {
+    grid-area: pilar4;
+}
+footer {
+    grid-area: footer;
+    text-align: center;
+}
+ @media screen and (max-widht:550){
+    
+    footer{
+        text-align: left;
+    }
+    
+}  
