@@ -1,100 +1,105 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.contenedor{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, auto); ;
-    gap:10px;
-    grid-template-areas: 
-    "header"
-    "slider"
-    "titulos"
-    "pilar1"
-    "pilar2"
-    "pilar3"
-    "pilar4"
-    "footer";   
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, auto);
+  gap: 10px;
+  grid-template-areas: "header" "slider" "titulos" "pilar1" "pilar2" "pilar3" "pilar4" "footer";
 }
+
 header {
-    grid-area: header;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 nav {
-    grid-area: nav;
-    display: flex;
+  grid-area: nav;
+  display: flex;
 }
+
 nav a {
-    margin-right: 10px;
+  margin-right: 10px;
 }
+
 img {
-    border:0px;
-    padding: 0px;
+  border: 0px;
+  padding: 0px;
 }
-a{
-    padding: 10px;
-    text-decoration: none;
+
+a {
+  padding: 10px;
+  text-decoration: none;
 }
-.slider{
-    grid-area: slider;
+
+.slider {
+  grid-area: slider;
 }
+
 .titulos {
-    grid-area:titulos;
-    text-align: center;
-    width:auto;
+  grid-area: titulos;
+  text-align: center;
+  justify-content: center;
+  width: auto;
+  height: 10rem;
 }
+
 article {
-    max-width: 300px;
-    border:1px solid gray;
-    border-radius: 10px;
-    padding: 1rem;
-    text-align: justify;
- }
- .pilar1 {
-    grid-area: pilar1;
+  max-width: 300px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: justify;
 }
+
+article h2 {
+  text-align: center;
+}
+
+.pilar1 {
+  grid-area: pilar1;
+}
+
 .pilar2 {
-    grid-area: pilar2;
+  grid-area: pilar2;
 }
+
 .pilar3 {
-    grid-area: pilar3;
+  grid-area: pilar3;
 }
+
 .pilar4 {
-    grid-area: pilar4;
+  grid-area: pilar4;
 }
+
 footer {
-    grid-area: footer;
-    text-align: center;
+  grid-area: footer;
+  text-align: center;
+  background-color: #29353b;
+  color: azure;
 }
- @media screen and (min-width:550px){
-    .contenedor {
-        grid-template-columns: repeat(2,1fr) ;
-        grid-template-rows: repeat(6,auto);
-        gap:10px;
-        grid-template-areas: 
-        "header header"
-        "slider slider"
-        "titulos titulos"
-        "pilar1 pilar2" 
-        "pilar3 pilar4"
-        "footer footer";
-    }
-}  
-@media screen and (min-width:900px){
-    .contenedor {
-        grid-template-columns: repeat(4,1fr) ;
-        grid-template-rows: repeat(5,auto);
-        gap:10px;
-        grid-template-areas: 
-        "header header header header"
-        "slider slider slider slider"
-        "titulos titulos titulos titulos"
-        "pilar1 pilar2 pilar3 pilar4"
-        "footer footer footer footer";
-    }
-}  
+
+@media screen and (min-width: 550px) {
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    gap: 10px;
+    grid-template-areas: "header header" "slider slider" "titulos titulos" "pilar1 pilar2" "pilar3 pilar4" "footer footer";
+  }
+}
+@media screen and (min-width: 900px) {
+  .contenedor {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 10px;
+    grid-template-areas: "header header header header" "slider slider slider slider" "titulos titulos titulos titulos" "pilar1 pilar2 pilar3 pilar4" "footer footer footer footer";
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
