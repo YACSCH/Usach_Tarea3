@@ -8,7 +8,6 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(8, auto);
-  gap: 10px;
   grid-template-areas: "header" "slider" "titulos" "pilar1" "pilar2" "pilar3" "pilar4" "footer";
 }
 
@@ -89,7 +88,6 @@ footer {
   .contenedor {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, auto);
-    gap: 10px;
     grid-template-areas: "header header" "slider slider" "titulos titulos" "pilar1 pilar2" "pilar3 pilar4" "footer footer";
   }
 }
@@ -97,7 +95,6 @@ footer {
   .contenedor {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, auto);
-    gap: 10px;
     grid-template-areas: "header header header header" "slider slider slider slider" "titulos titulos titulos titulos" "pilar1 pilar2 pilar3 pilar4" "footer footer footer footer";
   }
 }
