@@ -78,6 +78,7 @@ article h2 {
 }
 
 footer {
+  margin-top: 10px;
   grid-area: footer;
   text-align: center;
   background-color: #29353b;
